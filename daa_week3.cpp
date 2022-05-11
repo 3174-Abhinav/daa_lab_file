@@ -38,6 +38,63 @@ int main()
   return 0;
 }
 */
+//QUES 2
+/*
+#include <iostream>
+using namespace std;
+
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void printArray(int array[], int size, int comp, int shift)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+    cout << "\ncomparisons =" << comp;
+    cout << "\nshifts = " << shift << endl;
+}
+
+void selection_sort(int array[], int size)
+{
+    int i, shift = 0, comp = 0;
+    for (i = 0; i < size - 1; i++)
+    {
+        int temp = i;
+        for (int j = j + 1; j < size; j++)
+        {
+            ++comp;
+            if (array[j] < array[temp])
+                temp = j;
+        }
+            swap(&array[temp], &array[i]);
+            ++shift;    
+    }
+    printArray(array, size, comp, shift);
+}
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        int arr[n];
+        for (int i = 0; i < n; i++)
+            cin >> arr[i];
+        selection_sort(arr, n);
+    }
+    return 0;
+}
+*/
+
 //QUES 3
 /*#include <iostream>
 using namespace std;
