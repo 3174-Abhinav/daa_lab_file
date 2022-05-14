@@ -79,7 +79,7 @@ int main()
 //QUES 2
 #include <bits/stdc++.h>
 using namespace std;
-void binary_search(int a[], int n, int item)
+void search(int a[], int n, int item)
 {
     int mid, result = -1, low = 0, high = n - 1;
     for (int i = 0; i < n; i++)
@@ -116,6 +116,6 @@ int main()
         }
         cin >> key;
         sort(a, a + n);
-        binary_search(a, n, key);
+        search(a, n, key);
     }
 }
