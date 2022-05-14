@@ -121,7 +121,6 @@ int main()
 }
 */
 //QUES 3
-/*
 #include<bits/stdc++.h>
 using namespace std;
 void check(int a[], int n, int a1[],int m)
