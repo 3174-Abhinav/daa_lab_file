@@ -77,7 +77,7 @@ int main()
 }
 */
 //QUES 2
-#include <bits/stdc++.h>
+/*#include <bits/stdc++.h>
 using namespace std;
 void search(int a[], int n, int item)
 {
@@ -118,4 +118,39 @@ int main()
         sort(a, a + n);
         search(a, n, key);
     }
+}
+*/
+//QUES 3
+/*
+#include<bits/stdc++.h>
+using namespace std;
+void check(int a[], int n, int a1[],int m)
+{
+ int i=0,j=0;
+ while(i<n && j< m)
+ {
+  if(a[i]<a1[j]) i++;
+  else if(a[i]>a1[j]) j++;
+  else {
+    cout<<a[i]<< " ";
+    i++;
+    j++;
+    }
+ }
+}
+int main()
+{
+ int i,n,m;
+ cin>>n;
+ int a[n];
+ for(i=0;i<n;i++)
+    cin>>a[i];
+ cin>>m;
+ int a1[m];
+ for(i=0;i<m;i++)
+    cin>>a1[i];
+ sort(a,a+n);
+ sort(a1,a1+m);
+ check(a,n,a1,m);
+return 0;
 }
