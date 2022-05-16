@@ -34,7 +34,7 @@ void binary_search(int a[], int n, int item)
     int l = 0;
     int r = n - 1;
     int comp = 0;
-    while (l < r)
+    while (l <=r)
     {
         int m = l + (r - l) / 2;
         ++comp;
