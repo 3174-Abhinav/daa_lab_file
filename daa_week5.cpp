@@ -44,7 +44,7 @@ void countSort(int array[], int size)
     {
         array[i] = output[i];
     }
-    if(result>2)
+    if(m>2)
     {
         cout<<char(result)<<" - "<<m<<endl;
     }
