@@ -37,7 +37,8 @@ void binary_search(int a[], int n, int item)
     while (l < r)
     {
         int m = l + (r - l) / 2;
-        if (a[m] == item && ++comp)
+        ++comp;
+        if (a[m] == item)
         {
             cout << "Present " << comp << "\n";
             return ;
