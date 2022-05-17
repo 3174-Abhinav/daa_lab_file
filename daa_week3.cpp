@@ -67,7 +67,7 @@ void selection_sort(int array[], int size)
     for (i = 0; i < size - 1; i++)
     {
         int temp = i;
-        for (int j = j + 1; j < size; j++)
+        for (int j = i + 1; j < size; j++)
         {
             ++comp;
             if (array[j] < array[temp])
